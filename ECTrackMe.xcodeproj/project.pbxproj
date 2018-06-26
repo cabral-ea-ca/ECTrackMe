@@ -14,6 +14,13 @@
 		0D19525520DC98A200EDD953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D19525320DC98A200EDD953 /* LaunchScreen.storyboard */; };
 		0D19526020DC98A200EDD953 /* ECTrackMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D19525F20DC98A200EDD953 /* ECTrackMeTests.swift */; };
 		0D19526B20DC98A200EDD953 /* ECTrackMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D19526A20DC98A200EDD953 /* ECTrackMeUITests.swift */; };
+		0D19527920DC992300EDD953 /* DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D19527820DC992300EDD953 /* DisplayAlert.swift */; };
+		0D19527B20DC995800EDD953 /* ViewControllerDispatchFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D19527A20DC995800EDD953 /* ViewControllerDispatchFunc.swift */; };
+		0D19527D20DC998F00EDD953 /* ViewControllerHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D19527C20DC998F00EDD953 /* ViewControllerHandlers.swift */; };
+		0D705A1D20DE0F3A007ECCD7 /* LogViewControllerHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D705A1C20DE0F3A007ECCD7 /* LogViewControllerHandlers.swift */; };
+		0D705A1F20DE247C007ECCD7 /* PeriodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D705A1E20DE247C007ECCD7 /* PeriodButton.swift */; };
+		0D7A741520DCAB1600C3CD8A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A741420DCAB1600C3CD8A /* LogViewController.swift */; };
+		0DD561FD20E14E6A00F53B7E /* LogViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD561FC20E14E6A00F53B7E /* LogViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		0D19526620DC98A200EDD953 /* ECTrackMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECTrackMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D19526A20DC98A200EDD953 /* ECTrackMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECTrackMeUITests.swift; sourceTree = "<group>"; };
 		0D19526C20DC98A200EDD953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D19527820DC992300EDD953 /* DisplayAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayAlert.swift; sourceTree = "<group>"; };
+		0D19527A20DC995800EDD953 /* ViewControllerDispatchFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDispatchFunc.swift; sourceTree = "<group>"; };
+		0D19527C20DC998F00EDD953 /* ViewControllerHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHandlers.swift; sourceTree = "<group>"; };
+		0D705A1C20DE0F3A007ECCD7 /* LogViewControllerHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewControllerHandlers.swift; sourceTree = "<group>"; };
+		0D705A1E20DE247C007ECCD7 /* PeriodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodButton.swift; sourceTree = "<group>"; };
+		0D7A741420DCAB1600C3CD8A /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		0DD561FC20E14E6A00F53B7E /* LogViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				0D19524A20DC989D00EDD953 /* AppDelegate.swift */,
-				0D19524C20DC989D00EDD953 /* ViewController.swift */,
+				0D19527820DC992300EDD953 /* DisplayAlert.swift */,
+				0D7A741620DCABA400C3CD8A /* Main View */,
+				0D7A741720DCAF0600C3CD8A /* Log View */,
 				0D19524E20DC989D00EDD953 /* Main.storyboard */,
 				0D19525120DC98A200EDD953 /* Assets.xcassets */,
 				0D19525320DC98A200EDD953 /* LaunchScreen.storyboard */,
@@ -123,6 +139,27 @@
 				0D19526C20DC98A200EDD953 /* Info.plist */,
 			);
 			path = ECTrackMeUITests;
+			sourceTree = "<group>";
+		};
+		0D7A741620DCABA400C3CD8A /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				0D19524C20DC989D00EDD953 /* ViewController.swift */,
+				0D19527A20DC995800EDD953 /* ViewControllerDispatchFunc.swift */,
+				0D19527C20DC998F00EDD953 /* ViewControllerHandlers.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		0D7A741720DCAF0600C3CD8A /* Log View */ = {
+			isa = PBXGroup;
+			children = (
+				0D7A741420DCAB1600C3CD8A /* LogViewController.swift */,
+				0DD561FC20E14E6A00F53B7E /* LogViewControllerExt.swift */,
+				0D705A1C20DE0F3A007ECCD7 /* LogViewControllerHandlers.swift */,
+				0D705A1E20DE247C007ECCD7 /* PeriodButton.swift */,
+			);
+			path = "Log View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D705A1D20DE0F3A007ECCD7 /* LogViewControllerHandlers.swift in Sources */,
+				0D19527B20DC995800EDD953 /* ViewControllerDispatchFunc.swift in Sources */,
+				0D19527920DC992300EDD953 /* DisplayAlert.swift in Sources */,
+				0DD561FD20E14E6A00F53B7E /* LogViewControllerExt.swift in Sources */,
 				0D19524D20DC989D00EDD953 /* ViewController.swift in Sources */,
+				0D705A1F20DE247C007ECCD7 /* PeriodButton.swift in Sources */,
+				0D7A741520DCAB1600C3CD8A /* LogViewController.swift in Sources */,
 				0D19524B20DC989D00EDD953 /* AppDelegate.swift in Sources */,
+				0D19527D20DC998F00EDD953 /* ViewControllerHandlers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N7238GD4W;
 				INFOPLIST_FILE = ECTrackMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N7238GD4W;
 				INFOPLIST_FILE = ECTrackMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
